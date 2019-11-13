@@ -1,0 +1,83 @@
+Script started on Wed 29 Jan 2014 09:52:49 AM CST
+brb0164@faculty% jflex Clite.jflex
+Reading "Clite.jflex"
+Constructing NFA : 179 states in NFA
+Converting NFA to DFA : 
+..............................................................................
+80 states before minimization, 72 states in minimized DFA
+Writing code to "CliteLexer.java"
+brb0164@faculty% javac CliteLex.java
+brb0164@faculty% java CliteLex < quotrem.c
+Source Program
+--------------
+
+// This program computes the quotient and remainder of 32 / 5.
+
+int main () {
+  int q, r, x, y;
+  x = 32; y = 5;
+  q = 0; r = x;
+  while (r >= y) {
+      q = q + 1; 
+      r = r - y;
+  }
+}
+
+List of Tokens
+--------------
+
+(keyword, int) 
+(keyword, main) 
+(operator, () 
+(operator, )) 
+(punctuation, {) 
+(keyword, int) 
+(identifier, q) 
+(punctuation, ,) 
+(identifier, r) 
+(punctuation, ,) 
+(identifier, x) 
+(punctuation, ,) 
+(identifier, y) 
+(punctuation, ;) 
+(identifier, x) 
+(operator, =) 
+(integer, 32) 
+(punctuation, ;) 
+(identifier, y) 
+(operator, =) 
+(integer, 5) 
+(punctuation, ;) 
+(identifier, q) 
+(operator, =) 
+(integer, 0) 
+(punctuation, ;) 
+(identifier, r) 
+(operator, =) 
+(identifier, x) 
+(punctuation, ;) 
+(keyword, while) 
+(operator, () 
+(identifier, r) 
+(operator, >=) 
+(identifier, y) 
+(operator, )) 
+(punctuation, {) 
+(identifier, q) 
+(operator, =) 
+(identifier, q) 
+(operator, +) 
+(integer, 1) 
+(punctuation, ;) 
+(identifier, r) 
+(operator, =) 
+(identifier, r) 
+(operator, -) 
+(identifier, y) 
+(punctuation, ;) 
+(punctuation, }) 
+(punctuation, }) 
+
+brb0164@faculty% exit
+
+Script done on Wed 29 Jan 2014 09:54:47 AM CST
